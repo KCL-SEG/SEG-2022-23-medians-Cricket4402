@@ -1,6 +1,7 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
-
+import math
+from platform import java_ver
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -9,4 +10,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+    
+# Actual functionality
+numbers.sort()
+x = math.floor(len(numbers)/2)-1
+if(len(numbers) % 2 == 0):
+    print((numbers[x] + numbers[x+1])/2)
+else:
+    print(numbers[x])
