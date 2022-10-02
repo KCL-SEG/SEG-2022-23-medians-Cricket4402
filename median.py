@@ -14,10 +14,10 @@ while True:
     
 # Actual functionality
 numbers.sort()
-x = math.floor(len(numbers)/2)-1
+x = math.floor(len(numbers)/2)
 
 print(x)
 if(len(numbers) % 2 == 0):
-    print((numbers[x] + numbers[x+1])/2)
+    print((numbers[x-1] + numbers[x])/2)
 else:
     print(numbers[x])
